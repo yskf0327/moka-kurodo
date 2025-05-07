@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="東京を拠点に活動する画家、Moka Kurodo のポートフォリオサイトです。" />
+    <title>MOKA KURODO's Portfolio</title>
+    <!-- reset.css destyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <!-- google fonts (Raleway / Noto Sans Japanese) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-w header-inner">
+        <h1>
+          <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Moka Kurodo" /></a>
+        </h1>
+        <button type="button" class="nav-button" id="js-nav-button" tabindex="0">
+          <span class="nav-button-line"> <span class="sr-only">メニュー開閉</span></span>
+        </button>
+        <nav class="nav">
+          <ul>
+            <li><a class="link" href="#about">about</a></li>
+            <li><a class="link" href="#works">works</a></li>
+            <li><a class="link" href="#news">news</a></li>
+            <li><a class="link" href="#contact">contact</a></li>
+            <li>
+              <a href="#" target="_blank"><img src="./img/icon-instagram.svg" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section id="about" class="about">
+        <div class="about-inner">
+          <h2 class="section-heading" data-en="about">自己紹介</h2>
+          <p class="about-text">
+            １９９３年生まれ。<br />
+            東京藝術大学美術学部絵画科卒業。<br />
+            東京を拠点に、油彩を主にした創作活動を行っています。
+          </p>
+          <img class="about-img" src="./img/profile.jpg" alt="MOKA KURODOのプロフィール写真" />
+          <div class="button-wrapper"><a href="#" class="link more">see more</a></div>
+        </div>
+      </section>
+      <section id="works" class="works">
+        <div class="content-w">
+          <h2 class="section-heading" data-en="works">作品一覧</h2>
+          <ul class="works-list">
+            <li class="works-item"><img src="./img/work01.jpg" alt="作品1" /></li>
+            <li class="works-item"><img src="./img/work02.jpg" alt="作品2" /></li>
+            <li class="works-item"><img src="./img/work03.jpg" alt="作品3" /></li>
+            <li class="works-item"><img src="./img/work04.jpg" alt="作品4" /></li>
+            <li class="works-item"><img src="./img/work05.jpg" alt="作品5" /></li>
+            <li class="works-item"><img src="./img/work06.jpg" alt="作品6" /></li>
+          </ul>
+          <div class="button-wrapper"><a href="#" class="link more">see more</a></div>
+        </div>
+      </section>
+      <section id="news" class="news">
+        <h2 class="section-heading" data-en="news">お知らせ</h2>
+        <div class="news-wrapper">
+          <article class="news-post">
+            <header class="news-header content-w">
+              <time datetime="2025-01-01">2025.01.01</time>
+              <hgroup class="news-heading">
+                <p class="news-label">お知らせ</p>
+                <h3>テキストテキストテキストテキストテキストテキスト</h3>
+              </hgroup>
+            </header>
+          </article>
+          <article class="news-post">
+            <header class="news-header content-w">
+              <time datetime="2025-01-01">2025.01.01</time>
+              <hgroup class="news-heading">
+                <p class="news-label">個展開催のお知らせ</p>
+                <h3>テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+              </hgroup>
+            </header>
+          </article>
+          <article class="news-post">
+            <header class="news-header content-w">
+              <time datetime="2025-01-01">2025.01.01</time>
+              <hgroup class="news-heading">
+                <p class="news-label">イベント開催のお知らせ</p>
+                <h3>テキストテキストテキストテキストテキストテキストテキスト</h3>
+              </hgroup>
+            </header>
+          </article>
+          <article class="news-post">
+            <header class="news-header content-w">
+              <time datetime="2025-01-01">2025.01.01</time>
+              <hgroup class="news-heading">
+                <p class="news-label">お知らせ</p>
+                <h3>テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+              </hgroup>
+            </header>
+          </article>
+          <article class="news-post">
+            <header class="news-header content-w">
+              <time datetime="2025-01-01">2025.01.01</time>
+              <hgroup class="news-heading">
+                <p class="news-label">個展開催のお知らせ</p>
+                <h3>テキストテキストテキストテキストテキストテキストテキスト</h3>
+              </hgroup>
+            </header>
+          </article>
+        </div>
+        <div class="button-wrapper"><a href="#" class="link more">see more</a></div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="content-w">
+          <h2 class="section-heading" data-en="contact">お問い合わせ</h2>
+          <form action="#" method="post">
+            <div class="form-item"><label class="form-label" for="your-name">name</label><input type="text" name="your-name" id="your-name" /></div>
+            <div class="form-item"><label class="form-label" for="email">e-mail</label><input type="email" name="email" id="email" /></div>
+            <div class="form-item"><label class="form-label" for="message">message</label><textarea name="message" id="message"></textarea></div>
+            <div class="button-wrapper">
+              <input class="button submit" type="submit" value="send" name="contact" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>&copy; moka kurodo</small>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
