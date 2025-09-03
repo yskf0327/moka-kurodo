@@ -86,6 +86,13 @@ nav > ul {
 nav > ul > li > a {
   font-size: 0.845rem;
 }
+nav > ul > li > a:focus {
+  text-decoration: underline;
+}
+nav > ul > li > a:focus img {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
 nav > ul > li {
   transition-property: scale font-weight;
   transition-duration: 0.3s;
@@ -98,6 +105,10 @@ nav > ul > li:hover {
 .logo {
   text-align: center;
   line-height: 0;
+}
+.logo a:focus {
+  display: inline-block;
+  background-color: #cccccc;
 }
 
 /* フッター
@@ -275,6 +286,10 @@ textarea {
   display: inline-block;
   font-weight: 600;
   letter-spacing: 0.2em;
+}
+.link-more:focus {
+  outline: 3px solid #cccccc;
+  outline-offset: 3px;
 }
 .link-more::after {
   content: '';
