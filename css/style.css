@@ -61,18 +61,20 @@ section {
 /* ヘッダー
 ----------------------------------- */
 header {
-  /* padding-block: 2.5rem calc(2.5rem + 600px); */
-  padding-block-end: 600px;
+  padding-block-end: calc(152px + 600px);
   background-image: url(../img/mainvisual.jpg);
   background-size: cover;
-  background-position: -20px 130px;
+  background-position: -20px 152px;
 }
 .header-inner {
   background-color: #ffffff;
   padding-block: 2.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 .header-inner > .wrapper {
   display: flex;
@@ -329,7 +331,7 @@ textarea {
 @media (min-width: 600px) {
   /* ヘッダー */
   header {
-    background-position: left top;
+    background-position: left 104px;
   }
 
   .header-inner > .wrapper {
