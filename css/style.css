@@ -234,6 +234,7 @@ form {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.2em;
+  transition: all 0.3s ease-in-out;
 }
 .form-button {
   display: flex;
@@ -251,10 +252,12 @@ textarea {
   outline: 3px solid transparent;
   transition: outline 0.3s ease-in-out;
 }
-:is(input[type='text'], input[type='email'], textarea):focus {
-  outline: 3px solid #3f3f3f;
+:is(input[type='text'], input[type='email'], textarea, .button):focus {
+  outline: 3px solid color-mix(in srgb, #3f3f3f, #ffffff 50%);
 }
-
+.form-group:has(:is(input[type='text'], input[type='email'], textarea, .button):focus) .form-label {
+  font-weight: 700;
+}
 textarea {
   height: 200px;
 }
@@ -298,7 +301,7 @@ textarea {
   padding: 17px 78px;
   background-color: #3f3f3f;
   color: #ffffff;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 .button:hover {
   background-color: #c8c8c8;
