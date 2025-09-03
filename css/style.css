@@ -106,9 +106,11 @@ nav > ul > li:hover {
   text-align: center;
   line-height: 0;
 }
+
 .logo a:focus {
   display: inline-block;
-  background-color: #cccccc;
+  outline: 3px solid #cccccc;
+  outline-offset: 3px;
 }
 
 /* フッター
