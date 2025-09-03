@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- descriptionあると良い -->
     <meta name="description" content="画家 MOKA KURODO のポートフォリオサイトです。" />
+    <!-- タイトルタグ忘れないで -->
     <title>MOKA KURODO</title>
     <!-- reset css -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
@@ -11,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- original css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -18,6 +21,7 @@
       <div class="header-inner">
         <div class="wrapper">
           <h1 class="logo">
+            <!-- ロゴはトップページへのリンクが期待されるのでa要素ほしい -->
             <a href="./"><img src="./img/logo.svg" alt="Moka Kurodo" /></a>
           </h1>
           <nav>
@@ -28,7 +32,7 @@
               <!-- <li><a href="#access">Access</a></li> -->
               <li><a href="#contact">Contact</a></li>
               <li>
-                <a href="#"><img src="./img/icon-instagram.svg" alt="Instagramへのリンク" /></a>
+                <a href="#" target="_blank"><img src="./img/icon-instagram.svg" alt="Instagramへのリンク" /></a>
               </li>
             </ul>
           </nav>
@@ -39,6 +43,8 @@
       <section id="about">
         <div class="about-inner wrapper">
           <div class="about-text">
+            <!-- 見出しの英単語は飾り -->
+            <!-- data属性とattr()関数が使えると完璧 -->
             <h2 class="heading" data-en="About">自己紹介</h2>
             <p>
               １９９３年生まれ。<br />
@@ -68,9 +74,12 @@
       <section id="news">
         <h2 class="heading" data-en="News">お知らせ</h2>
         <div class="wrapper">
+          <!-- 説明リストも可 -->
           <ul class="news-list">
             <li class="news-item">
+              <!-- time要素使ってほしい -->
               <time class="news-date" datetime="2025-01-05">2025.01.05</time>
+              <!-- 【】は装飾なので擬似要素でできると尚良し -->
               <h3 class="news-title"><span class="news-cat">お知らせ</span>テキストテキストテキストテキストテキストテキスト</h3>
             </li>
             <li class="news-item">
@@ -96,13 +105,17 @@
       <section id="access">
         <h2 class="heading" data-en="Access">アクセス</h2>
         <div class="access-inner wrapper">
+          <!-- コンテンツの順番は任意。地図が先でも情報が先でも。より伝えたいものを先に書く -->
           <div class="access-info">
+            <!-- スタジオ名は見出しにしても可。(主観では見出しにするほどでもないと思う) -->
             <p class="access-name">
               art studio<br />
               <span class="access-name-large">Moka</span>
             </p>
+            <!-- address要素を使うかどうかは微妙なところ -->
             <p>〒810-0072 <br />福岡県福岡市中央区長浜１丁目4番13号 <br />SF福岡ビル 6階</p>
             <p>福岡市営地下鉄空港線 天神駅から徒歩10分</p>
+            <!-- 注釈なのでsmall要素で書けると尚良し -->
             <p><small class="asterisk">スタジオに駐車場はございません。お車でお越しの方は、近隣のコインパーキングをご利用ください。</small></p>
           </div>
           <div class="access-map">
